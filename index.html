@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laços Papelaria Personalizada</title>
+    <style>
+        body,
+        html {
+            background-color: rgb(69, 111, 134);
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: white;
+            color: rgb(69, 111, 134);
+            cursor: pointer;
+            border-radius: 5px;
+            width: 50%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <script>
+        function openPage(page) {
+            window.open(
+                page,
+                '_blank'
+            )
+        }
+
+        function openWhatsapp() {
+            openPage('https://wa.me/5511947714111')
+        }
+
+        function openElo7() {
+            openPage('https://www.elo7.com.br/Lacospapelaria')
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="./logo.png" width="50%">
+        <br><br><br><br>
+        <button onclick="openElo7()">ELO7</button>
+        <br><br>
+        <button onclick="openWhatsapp()">WHATSAPP</button>
+    </div>
+
+</body>
+
+</html>
